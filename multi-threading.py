@@ -48,7 +48,7 @@ thread4.start()
 thread5 = threading.Thread(target=pulangKeRumah)
 thread5.start()
 
-# .join() memastikan semua task telah selesai sebelum dilanjutkan ke proses
+# .join() memastikan semua task telah selesai sebelum dilanjutkan ke proses atau line kode selanjutnya
 thread1.join()
 thread2.join()
 thread3.join()
@@ -57,6 +57,6 @@ thread5.join()
 
 # Multi-threading memungkinan untuk menyelesaikan
 # suatu task secara simultan dan efisien
-# dengan masing-masing thread mengerjakan tugas masing-masing
+# dengan masing-masing thread mengerjakan task masing-masing
 
 print("All task are done!")
